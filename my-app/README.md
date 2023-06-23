@@ -4,13 +4,16 @@
 <br>
 <br>
 <br>
-# Passos para executar o projeto!
-## Pré-requisitos
+## Etapas para executar o projeto!
+### Pré-requisitos
 * Tenha o docker instalado no seu computador.
 
-## Etapas
+### Etapas
 * Execute em seu terminal o seguinte comando.
 ```
 docker compose up -d
 ```
 * Acesse através do seu navegador o endereço [localhost:3000](http://localhost:3000) ou [127.0.0.1:3000](http://127.0.0.1:3000).
+
+## Acessar online 
+ Para acessar a versão online, clique o link a seguir: [RadioBrowser](https://radio-browser-flavio-gimenez.vercel.app/)
