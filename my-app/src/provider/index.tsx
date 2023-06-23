@@ -104,6 +104,7 @@ export const ProductContextProvider = ({ children }: ProductContextProvider) => 
             favorites.splice(index, 1)
             localStorage.setItem("favorites", JSON.stringify(favorites))
             setFavoriteRadio(favorites)
+            toast.info("Rádio deletada com sucesso!", { autoClose: 1500 })
       }
       const editRadioFavorite = (id: string, name: string) => {
             const storedList: any = localStorage.getItem("favorites")

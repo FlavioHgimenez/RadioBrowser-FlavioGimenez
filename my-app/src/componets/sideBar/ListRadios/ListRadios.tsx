@@ -1,7 +1,6 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { RadioContext } from "../../../provider"
 import Pagination from "../../Pagination/Pagination"
-import EmptyList from "../../Home/EmptyList/EmptyList"
 import { IDataRadiosItem } from "../../../interface/userModel"
 
 const ListRadios = () => {

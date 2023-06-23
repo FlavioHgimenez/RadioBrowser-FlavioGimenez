@@ -1,9 +1,9 @@
 import { RadioContext } from "../../../provider"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 
 const HeaderHome = () => {
 
-      const { filterFavoritesRadios, filter } = useContext(RadioContext)
+      const { filterFavoritesRadios } = useContext(RadioContext)
 
       return (
             <header className="flex flex-col lg:flex-row justify-around p-5">

@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import { IPropsSideBar } from "../../interface/userModel"
 import { RadioContext } from "../../provider"
 import HeaderHome from "./HeaderHome/HeaderHome"
 import ListFavoriteHome from "./ListFavoriteRadios/ListFavoriteHome"

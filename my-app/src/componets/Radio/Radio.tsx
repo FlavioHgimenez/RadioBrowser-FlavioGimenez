@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import { RadioContext } from "../../provider"
 
 const Radio = () => {
@@ -16,7 +16,7 @@ const Radio = () => {
             else {
                   audioRef.current.pause()
             }
-      }, [radioUrl])
+      }, [radioUrl, audioRef])
 
       return (
             <audio

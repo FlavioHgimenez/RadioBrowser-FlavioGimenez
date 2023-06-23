@@ -1,5 +1,5 @@
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { RadioContext } from "../../provider"
 
 const Pagination = () => {
