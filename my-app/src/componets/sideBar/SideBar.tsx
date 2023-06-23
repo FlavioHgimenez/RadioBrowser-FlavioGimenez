@@ -1,4 +1,5 @@
 import { RadioContext } from "../../provider";
+import Pagination from "../Pagination/Pagination";
 import DropdawnFilter from "./DropdawnFilter/DropdawnFilter";
 import ListRadios from "./ListRadios/ListRadios";
 import { useContext } from "react"
@@ -16,6 +17,7 @@ const Sidebar = () => {
                   }>
                         <div className={`ease-in-out mt-[130px] w-full ${sidebarOpen ? "w-50" : "opacity-0 w-0"} px-2 py-1 rounded-md transition-width duration-500`}>
                               <ListRadios />
+                              <Pagination />
                         </div>
                         <div className={
                               `flex  justify-center fixed transition-all duration-500 ease-in-out lg:w-fit
