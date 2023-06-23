@@ -77,7 +77,7 @@ const ListFavoriteHome = () => {
                                                             <button
                                                                   onClick={editName}
                                                                   className="bg-[#2baa11] shadow border border-[#2baa11] rounded-r-full px-2 hover:bg-[#5ab149] hover:border-[#2baa11]">
-                                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" className="w-6 h-6">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" className="w-4 h-4 lg:w-5 lg:h-5">
                                                                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                                                   </svg>
                                                             </button>

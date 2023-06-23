@@ -10,7 +10,7 @@ const Sidebar = () => {
 
       return (
             <div className={
-                  `fixed lg:inset-y-0 lg:z-50 flex justify-between h-full bg-[#f1ecec] ${sidebarOpen ? "w-full lg:w-[400px]" : "w-0 lg:w-[77px]"}  lg:flex-col transition-all duration-500 ease-in-out`
+                  `fixed lg:inset-y-0 z-50 flex justify-between h-full bg-[#f1ecec] ${sidebarOpen ? "w-full lg:w-[400px]" : "w-0 lg:w-[77px]"}  lg:flex-col transition-all duration-500 ease-in-out`
             }>
                   <div className={
                         `grow lg:flex flex-col rounded-r-xl shadow-xl ${sidebarOpen ? "px-6" : "lg:px-4"}`

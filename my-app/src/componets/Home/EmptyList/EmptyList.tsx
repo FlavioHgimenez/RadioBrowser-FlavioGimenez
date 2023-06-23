@@ -7,7 +7,7 @@ const EmptyList = () => {
 
       return (
             <div className={`${favoriteRadio.length !== 0 ? "hidden" : "flex justify-center flex-col items-center gap-5"} w-full h-full`}>
-                  <span className="text-[black] text-[20px] text-center">
+                  <span className="text-[black] text-[14px] lg:text-[20px] text-center">
                         Nenhum rádio adicionado na lista de favoritos
                   </span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">

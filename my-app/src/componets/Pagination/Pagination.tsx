@@ -19,7 +19,7 @@ const Pagination = () => {
                               </button>
                         )}
                   </div>
-                  <div className="hidden md:-mt-px md:flex">
+                  <div className="flex">
                         {currentPage > 2 && (
                               <button
                                     onClick={() => handleCurrentPage(currentPage - 2)}
