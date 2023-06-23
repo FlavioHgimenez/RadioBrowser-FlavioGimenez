@@ -1,5 +1,8 @@
 import { useContext, useState } from "react"
 import { RadioContext } from "../../../provider"
+import Pagination from "../../Pagination/Pagination"
+import EmptyList from "../../Home/EmptyList/EmptyList"
+import { IDataRadiosItem } from "../../../interface/userModel"
 
 const ListRadios = () => {
 
@@ -7,9 +10,9 @@ const ListRadios = () => {
 
       return (
             <ul className={`w-full flex flex-col gap-2 transition-transform duration-500 ease-linear transform ${sidebarOpen ? "translate-x-0 delay-300" : "-translate-x-full"}`}>
-                  {RadioItems?.data?.map((radio: any, index: number) => {
+                  {RadioItems?.data?.map((radio: IDataRadiosItem, index: number) => {
 
-                        const itemInList = favoriteRadio?.some((fav: any) => fav.name === radio.name)
+                        const itemInList = favoriteRadio?.some((fav: any) => fav.stationuuid === radio.stationuuid)
 
                         return (
                               <li
@@ -19,13 +22,14 @@ const ListRadios = () => {
                                           addFavorite(radio)
                                     }}
                               >
-                                    <span className="text-sm font-medium truncate">{radio.name}</span>
+                                    <span className="text-sm font-medium truncate">{radio.name && radio.name.replaceAll(" ", "").length > 0 ? radio.name : "Sem Nome"}</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="black" className={`w-5 h-5 ${itemInList ? "flex" : "hidden"}`}>
                                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                     </svg>
                               </li>
                         )
                   })}
+                  <Pagination />
             </ul>
       )
 }

@@ -1,0 +1,13 @@
+FROM node:18-alpine 
+
+WORKDIR /frontend
+
+COPY . .
+
+RUN npm install 
+
+RUN npm run Build
+
+EXPOSE 3000
+
+# CMD [ "npx", "serve", "build" ]

@@ -4,7 +4,7 @@ import SideBar from "../componets/sideBar/SideBar"
 const RadioBrowserHome = () => {
 
       return (
-            <main className="flex h-[100vh] w-[100vw]">
+            <main className="flex min-h-[100vh] w-[100vw]">
                   < SideBar />
                   <Home />
             </main >
